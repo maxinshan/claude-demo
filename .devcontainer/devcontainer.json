@@ -1,0 +1,13 @@
+{
+  "name": "Claude + Codespaces + VS Code",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "customizations": {
+    "vscode": {
+      "extensions": ["Anthropic.claude"],
+      "settings": {
+        "claude.autoAcceptEdits": true
+      }
+    }
+  },
+  "postCreateCommand": "curl -fsSL https://claude.ai/install.sh | sh"
+}
